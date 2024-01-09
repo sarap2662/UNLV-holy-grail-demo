@@ -1,0 +1,53 @@
+*{
+    outline: 1px solid red;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    background: red;
+    
+    height: 100vh;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    background: green;
+    flex-grow: 1;
+   
+}
+
+nav, aside{
+    background: lightgreen;
+    flex-grow: 2;
+}
+
+main{
+    background: darkcyan;
+    flex-grow: 10;
+    min-height: 65vh;
+}
+
+@media(min-width: 600px) {
+    
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+
+header, footer{
+    width: 100%;
+}
+
+main{
+    width: 65%;
+}
+}
